@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <!-- First choose the title of page -->
+        <div class="page-title">
+            <h1 class="page-title-text">Simple Gradient Generator</h1>
+        </div>
+
+        <!-- Second chose how to see the page, default in dark mode or, at choice, in light mode -->
+        <div class="page-setting">
+            <button class="light-mode" id="lightMode">
+                <img src="./Assets/icons8-day-and-night-45.png" alt="dark/light-mode" class="dm-image">
+            </button>
+        </div>
+    </header>
+
+
+    <!-- choose if is linear or radial -->
+    <section class="format">
+        <div class="linear-format">
+            <button id="linear-check" class="formatButtons">Linear</button>
+        </div>
+        <div class="radial-format">
+            <button id="radial-check" class="formatButtons">Radial</button>
+        </div>
+    </section>
+
+
+    <!-- gradient settings -->
+    <section class="set-color">
+
+        <!-- color1 settings -->
+        <div class="color1-picker">
+
+            <!-- color1 picker container -->
+            <div class="color-c1">
+                <p>Choose color 1</p>
+                <input type="color" name="setcolor1" value="#0040ff" class="setcolor1">
+                
+                <!-- transparency picker -->
+                <input id="color1_picker_alpha" type="range" min="0" max="255" step="1" value="255" />
+            </div>
+
+        </div>
+
+        <!-- gradient display -->
+        <div class="gradient-display" id="grad-display">
+
+        </div> 
+
+        <!-- color2 settings -->
+        <div class="color2-picker">
+
+            <!-- color2 picker container -->
+            <div class="color-c2">
+                <p>Choose color 1</p>
+                <input type="color" name="setcolor2" value="#00b3ff" class="setcolor2">
+
+                <!-- transparency picker -->
+                <input id="color2_picker_alpha" type="range" min="0" max="255" step="1" value="255" />
+            </div>
+        </div>
+
+    </section>
+
+    <!-- some empty space -->
+    <div class="buffer">
+        
+    </div>
+    
+    <!-- Css Code display -->
+    <section class="code-area">
+        <h3></h3>
+    </section>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
